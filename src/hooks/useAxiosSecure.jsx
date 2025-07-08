@@ -4,8 +4,8 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const axiosSecure = axios.create({
-    // baseURL: 'https://doctor-house-server-zeta.vercel.app/api'
-    baseURL: 'http://localhost:5000/api/'
+    baseURL: 'https://doctor-house-server-zeta.vercel.app/api'
+    // baseURL: 'http://localhost:5000/api/'
 })
 
 export default function UseAxiosSecure() {
@@ -15,7 +15,7 @@ export default function UseAxiosSecure() {
     // add a request interceptor
     const requestInterceptor = axiosSecure.interceptors.request.use((config) => {
         const token = localStorage.getItem("access-token");
-        config.headers.Authorization = `Bearer ${token}` // স্পেস যোগ করা হয়েছে
+        config.headers.Authorization = `Bearer ${token}`
         return config
     }, (error) => {
         return Promise.reject(error)

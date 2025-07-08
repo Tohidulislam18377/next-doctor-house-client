@@ -38,8 +38,8 @@ export default function DoctorCart({ item }) {
                 <p className='flex items-center  gap-2 text-2xl'><AiFillDollarCircle /> {price}</p>
                 <p className='flex items-center gap-2 text-2xl'><FcViewDetails />{available}</p>
             </div>
-            <div className='w-[290px] p-2 ml-9 border border-2px border-[#F7A582] mx-auto text-center text-[#F7A582] hover:text-white hover:bg-[#F7A582] transition-all duration-300 ease-in-out rounded '>
-                <Link href={`/doctorCart/${_id}`}>View Profile</Link>
+            <div className=' '>
+                <Link className='block m-3 p-2 border border-2px border-[#F7A582] text-center text-[#F7A582] hover:text-white hover:bg-[#F7A582] transition-all duration-300 ease-in-out rounded cursor-pointer' href={`/doctorCart/${_id}`}>View Profile</Link>
             </div>
         </div >
 

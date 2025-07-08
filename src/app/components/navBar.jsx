@@ -47,7 +47,7 @@ export default function NavBar() {
                         src={logo}
                         width={50}
                         height={50}
-                    ></Image><span className='text-[#F7A582] md:ml-5px'>Doc</span> House</Link>
+                    ></Image><span className='text-[#F7A582]'>Doc</span> House</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-x-5 px-1 text-white">

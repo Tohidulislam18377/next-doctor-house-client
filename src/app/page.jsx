@@ -167,7 +167,7 @@ export default function Home() {
               <input className="text-white outline-none bg-[rgba(255,255,255,0.05)] pl-4 p-2  w-[267px]" type="text" name="doctorName" id="" placeholder="Doctor Name" required />
             </div>
             <div className="flex flex-col md:flex-row gap-4 mb-4">
-              <input className="block text-white outline-none bg-[rgba(255,255,255,0.05)] pl-4 p-2  w-[267px]" type="date" name="date" id="" placeholder="Date" required />
+              <input className="block text-white outline-none bg-[rgba(255,255,255,0.05)] pl-4 p-2 w-[267px]" type="date" name="date" id="" placeholder="Date" required />
               <input className="text-white outline-none bg-[rgba(255,255,255,0.05)] pl-4 p-2  w-[267px]" type="time" name="time" id="" placeholder="Time" required />
             </div>
             <div className=" mx-auto  text-center">
