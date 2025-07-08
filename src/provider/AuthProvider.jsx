@@ -49,8 +49,8 @@ export const AuthProvider = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
             if (currentUser) {
-                // axios.post('http://localhost:5000/api/jwt', { email: currentUser?.email })
-                axios.post('https://doctor-house-server-zeta.vercel.app/api/jwt', { email: currentUser?.email })
+                axios.post('http://localhost:5000/api/jwt', { email: currentUser?.email })
+                    // axios.post('https://doctor-house-server-zeta.vercel.app/api/jwt', { email: currentUser?.email })
                     .then((data) => {
                         localStorage.setItem("access-token", data.data.token)
                         console.log(data.data)

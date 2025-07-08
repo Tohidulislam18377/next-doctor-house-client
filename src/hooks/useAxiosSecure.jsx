@@ -4,8 +4,8 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const axiosSecure = axios.create({
-    baseURL: 'https://doctor-house-server-zeta.vercel.app/api'
-    // baseURL: 'http://localhost:5000/api/'
+    // baseURL: 'https://doctor-house-server-zeta.vercel.app/api'
+    baseURL: 'http://localhost:5000/api/'
 })
 
 export default function UseAxiosSecure() {
